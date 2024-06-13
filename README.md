@@ -28,6 +28,9 @@ An IAM role in AWS (Amazon Web Services) is a set of permissions that define wha
 3) /status:- Used to check that service is operation or not. Method Used- GET
 
 # Functions in Code:- 
-1) 
+1) get_charge:- This method is retrieves the all the information related to a loan charge through its "id" . It takes charge_id as an argument and returns an object containing all the information about the particular charge. It sends GET request to the database and retrieves all the information.
+2) get_charges:- This method retrieves all the loan charges present in the database. It also sends the GET request and retrieves all the entries from the database.
+3) save_charge:- This methods allows to make a new entry in the database. It takes a json object as an argument and create a new entry in the database. It send a POST request 
+4) modify_charge:- This method allow to update the value from the database 
 
 
