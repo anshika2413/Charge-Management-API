@@ -14,3 +14,20 @@ Amazon DynamoDB is a fully managed NoSQL database service that provides fast and
 3) API Gateway:-
 AWS API Gateway is a fully managed service that makes it easy to create, deploy, and manage RESTful web APIs. It provides a simple and intuitive console for developers, as well as support for integrating APIs with other AWS services. With API Gateway, developers can secure their APIs using RESTful API design principles, and AWS will handle the underlying infrastructure.
 
+4) IAM Role:-
+An IAM role in AWS (Amazon Web Services) is a set of permissions that define what actions a user, group, or service can take on AWS resources. IAM roles provide a way to manage access to AWS resources in a secure and efficient manner. You can create and manage IAM roles using the AWS Management Console, the AWS CLI, or the AWS SDKs. An IAM role can be used to grant permissions to any number of resources, including EC2 instances, Elastic Load Balancers, and S3 buckets.
+
+# Endpoints of API:- 
+1) /charge:- Used to create , update , delete , retrieve single entry from database.
+   Mathods used:-
+   a) Create- POST
+   b) Update- PATCH
+   c) Delete- DELETE
+   d) Retrieve- POST
+2) /charges:- Used to retrive all the loan charges in database. Method Used- GET 
+3) /status:- Used to check that service is operation or not. Method Used- GET
+
+# Functions in Code:- 
+1) 
+
+
