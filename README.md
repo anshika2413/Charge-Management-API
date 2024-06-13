@@ -51,3 +51,6 @@ An IAM role in AWS (Amazon Web Services) is a set of permissions that define wha
 
 ![WhatsApp Image 2024-06-13 at 16 49 45_e838cbb5](https://github.com/anshika2413/Charge-Management-API/assets/112202632/6ff85688-0d4d-4e2d-9c7b-02776405ccc0)
 
+# URL:- 
+https://upz8omravd.execute-api.ap-south-1.amazonaws.com/prod/status
+
