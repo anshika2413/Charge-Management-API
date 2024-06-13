@@ -35,11 +35,17 @@ An IAM role in AWS (Amazon Web Services) is a set of permissions that define wha
 
 # Working:- 
 1.API Request:- A client (like a web app) sends a request to the API Gateway (e.g., to create, read, update, or delete a charge).
+
 2.API Gateway:- API Gateway receives the request and sends it to the appropriate AWS Lambda function(i.e api_pro).
+
 3.Lambda Function:- The Lambda function receives the request and reads the data (like charge details or charge ID).
+
 4.Interact with DynamoDB:- The Lambda function talks to DynamoDB to do the necessary action (add, get, update, or delete a charge record).
+
 5.Prepare Response:- The Lambda function creates a response based on what happened with the DynamoDB operation (e.g., a success message or charge details).
+
 6.Send Response to API Gateway:- The Lambda function sends this response back to the API Gateway.
+
 7.Client Receives Response:- API Gateway sends the final response back to the client, completing the process.
 
 
