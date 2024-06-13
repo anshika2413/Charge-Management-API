@@ -31,6 +31,24 @@ An IAM role in AWS (Amazon Web Services) is a set of permissions that define wha
 1) get_charge:- This method is retrieves the all the information related to a loan charge through its "id" . It takes charge_id as an argument and returns an object containing all the information about the particular charge. It sends GET request to the database and retrieves all the information.
 2) get_charges:- This method retrieves all the loan charges present in the database. It also sends the GET request and retrieves all the entries from the database.
 3) save_charge:- This methods allows to make a new entry in the database. It takes a json object as an argument and create a new entry in the database. It send a POST request 
-4) modify_charge:- This method allow to update the value from the database 
+4) modify_charge:- This method allow to update the value from the database . It takes charge_id, update_key, update_value as an argument and update the value which is passed as "update_key" in the database. It send a PATCH rquest to update values in the table.
 
+# Working:- 
+1.API Request:
+	A client (like a web app) sends a request to the API Gateway (e.g., to create, read, update, or delete a charge).
+2.API Gateway:
+	API Gateway receives the request and sends it to the appropriate AWS Lambda function(i.e api_pro).
+3.Lambda Function:
+	The Lambda function receives the request and reads the data (like charge details or charge ID).
+4.Interact with DynamoDB:
+	The Lambda function talks to DynamoDB to do the necessary action (add, get, update, or delete a charge record).
+5.Prepare Response:
+	The Lambda function creates a response based on what happened with the DynamoDB operation (e.g., a success message or charge details).
+6.Send Response to API Gateway:
+	The Lambda function sends this response back to the API Gateway.
+7.Client Receives Response:
+	API Gateway sends the final response back to the client, completing the process.
+
+
+![WhatsApp Image 2024-06-13 at 16 49 45_e838cbb5](https://github.com/anshika2413/Charge-Management-API/assets/112202632/6ff85688-0d4d-4e2d-9c7b-02776405ccc0)
 
